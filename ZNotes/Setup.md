@@ -27,18 +27,6 @@ configure mcp.json file following example are globle mcp
 				"E:\\SampleMcpServer\\SampleMcpServer.csproj"
 			]
 		},
-
-		// Another  MCP server configuration
-		"mcp_server": {
-			"type": "stdio",
-			"command": "dotnet",
-			"args": [
-				"run",
-				"--project",
-				"C:\\MCP\\MCP\\MCP_Server.csproj"
-			]
-		}
-      
 	},
 	"inputs": []
 }
@@ -60,7 +48,12 @@ Follow Quick guide link.
 [Donet](https://www.youtube.com/watch?v=4zkIBMFdL2w)
 [mcpSdk](https://github.com/modelcontextprotocol/csharp-sdk)
 
-
+# Mcp inspector to test mcpserver with  ui
+```bash
+npx @modelcontextprotocol/inspector dotnet run
+```
+run  from  *sever.csproj folder 
+![Demo](https://github.com/naveents23/MCPDemo/tree/main/Img/mcp_inspector.png)
 
 # Extra
 [CentralizedPackageManagement](https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management)
